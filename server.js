@@ -40,7 +40,10 @@ app.get('/exc/:message',(req,res) => {
                 /* if (vowels.indexOf(letter.toLowerCase())= -1) {
                     vowels += letter;
                 } */
-                vowels += letter;  
+                var vow = letter;
+                if (!vowels.includes(vow)){
+                    vowels += vow;
+                }
         }
 
     };
